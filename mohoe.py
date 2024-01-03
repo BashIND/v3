@@ -37,7 +37,7 @@ bin_whitelist = ["Oxxi1337", "Dons"]
 
 logging.getLogger('http.server').setLevel(logging.CRITICAL + 1)
 
-userDatabase = MongoClient('mongodb://localhost:27017').admin.mohio
+userDatabase = MongoClient('mongodb+srv://Atul:Atul@v3.hx26ylp.mongodb.net/?retryWrites=true&w=majority').admin.mohio
 
 def request_handler(req, req_body):
 	if req.path.split("://", 1)[1].startswith("api.stripe.com"):
